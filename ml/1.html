@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Live Smart Grid Monitor</h2>
+<div id="log"></div>
+
+<script>
+let ws = new WebSocket("ws://127.0.0.1:8000/ws");
+
+ws.onmessage = function(event) {
+    let data = JSON.parse(event.data);
+    document.getElementById("log").innerHTML +=
+        `<p>Customer: ${data.customer} | Level: ${data.level} | Prob: ${data.probability}</p>`;
+};
+</script>
+
+</body>
+</html>
