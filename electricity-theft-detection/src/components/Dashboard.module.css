@@ -1,0 +1,59 @@
+/* Dashboard.module.css */
+
+.dashboardContainer {
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.dashboardTitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.metricCard {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  color: #444;
+  text-align: center;
+}
+
+.chartSection,
+.alertSection {
+  margin-bottom: 30px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.actionButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 160px;
+}
+
+.actionButton:hover {
+  background-color: #0056b3;
+}

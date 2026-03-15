@@ -1,0 +1,114 @@
+/* Base container */
+.container {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #1f1c2c, #928dab);
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading section */
+.heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #00c6ff;
+  text-align: center;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.subtext {
+  font-size: 1rem;
+  text-align: center;
+  max-width: 700px;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* Table wrapper */
+.tableWrapper {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 900px;
+  overflow-x: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Table styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.table th {
+  background-color: rgba(0, 198, 255, 0.2);
+  color: #00c6ff;
+  font-weight: bold;
+}
+
+.table td {
+  color: #ffffff;
+}
+
+/* Alert level styling */
+.high {
+  color: #ff4c4c;
+  font-weight: bold;
+}
+
+.medium {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+.low {
+  color: #00ff99;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  padding: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .table th,
+  .table td {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .subtext {
+    font-size: 0.9rem;
+  }
+}

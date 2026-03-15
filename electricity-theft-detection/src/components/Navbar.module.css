@@ -1,0 +1,34 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #004080;
+  padding: 1rem;
+  color: white;
+}
+
+.projectTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid rgb(240, 240, 245);
+  padding-bottom: 0.5rem;
+  color: white;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
